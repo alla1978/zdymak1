@@ -12879,6 +12879,155 @@
     "id": "a9bb2ce2-ab5b-4655-a9a6-ccc01a6af27b",
     "name": "A пробел в email",
     "commands": []
+  }, {
+    "id": "76b9c236-10ec-4a23-aab1-84c3a6d97f90",
+    "name": "lenta",
+    "commands": [{
+      "id": "58a3864f-2785-4130-86d6-920c6b62581e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a595dd2-59c3-447a-be45-0ae9d566b28b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "793x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24295e79-ea98-4142-8519-4f7392478305",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-main_black_gb",
+      "targets": [
+        ["css=.bg-main_black_gb", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0422456c-ac50-412d-a780-2261de28cccf",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99f77b2d-1136-445c-9657-825f39befd3d",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "alla.gilep@ladyka.by"
+    }, {
+      "id": "712ad907-58b1-44c7-8f34-80489df52770",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a7b7b2c-187a-4747-9762-95635c34fdf2",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "login"
+    }, {
+      "id": "c54c4cc0-5d8b-4c46-84ca-9792f9be725c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b5c48cb-47e6-4d54-9c8d-49b862ebffc6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b66459e-5ec7-4119-ab49-6be4c6cd3c40",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(3) rect",
+      "targets": [
+        ["css=a:nth-child(3) rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ada3553-256f-4bb5-b797-f36e229b6c2a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=a:nth-child(3) rect",
+      "targets": [
+        ["css=a:nth-child(3) rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab8c46e6-ee78-47ad-b6bd-114cc4b36266",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=a:nth-child(3) rect",
+      "targets": [
+        ["css=a:nth-child(3) rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "12a33aa4-59b9-4d2d-bf3e-c6a6124f0ab1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1a6552ca-c3be-4e15-b62d-db4d05e20621",
+    "name": "comment",
+    "commands": []
   }],
   "suites": [{
     "id": "6dad89ae-e70f-4ffe-8e2f-b0605bbfdabd",
@@ -12894,6 +13043,13 @@
     "parallel": false,
     "timeout": 300,
     "tests": ["1376b46f-7abe-4c9f-b67d-40a3414a0d29", "f354b809-0e41-451a-b250-8d45725f9438", "112e62d9-41f6-4ee3-95a3-1acf008d399d"]
+  }, {
+    "id": "4acc8c12-6921-42db-847e-fcfd8f389acd",
+    "name": "lenta",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["76b9c236-10ec-4a23-aab1-84c3a6d97f90"]
   }],
   "urls": ["http://zdymak.live/"],
   "plugins": []
