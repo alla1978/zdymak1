@@ -12605,7 +12605,7 @@
         ["xpath=//div[@id='root']/div/div/form/div/div/input", "xpath:idRelative"],
         ["xpath=//input", "xpath:position"]
       ],
-      "value": "qwertyu@tut.by"
+      "value": "alla.gilep@ladyka.by"
     }, {
       "id": "e2486529-0670-4799-bcbe-e60d36d5807f",
       "comment": "",
@@ -12669,13 +12669,6 @@
         ["xpath=//button", "xpath:position"],
         ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
       ],
-      "value": ""
-    }, {
-      "id": "4fab83d8-d747-4197-a6d7-e3d13329081e",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
       "value": ""
     }]
   }, {
