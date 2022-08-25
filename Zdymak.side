@@ -1411,7 +1411,7 @@
     }]
   }, {
     "id": "b91ba85f-613c-475b-8bf7-7483290efee3",
-    "name": "без @",
+    "name": "without @",
     "commands": [{
       "id": "bdbabbe3-320c-4d7b-be34-9c3172333561",
       "comment": "",
@@ -1646,7 +1646,7 @@
     }]
   }, {
     "id": "18ea85b8-3af5-4bcc-a6de-2346df882cad",
-    "name": "пробел в email",
+    "name": "gap in email",
     "commands": [{
       "id": "c8a576e0-60e7-49fe-b883-f203f48b361e",
       "comment": "",
@@ -1903,7 +1903,7 @@
     }]
   }, {
     "id": "5b45606b-0a50-433b-9386-71be0ceb06be",
-    "name": "два @",
+    "name": "2 @",
     "commands": [{
       "id": "973258e6-fecb-45f6-aa1d-a95017a77f50",
       "comment": "",
@@ -2136,7 +2136,7 @@
     }]
   }, {
     "id": "4ce0b6ad-c73f-4216-bf63-5b92ae1a0664",
-    "name": "пробел в name",
+    "name": "gap in name",
     "commands": [{
       "id": "39c84ace-76fe-4922-a385-46d7049b5dfb",
       "comment": "",
@@ -2369,7 +2369,7 @@
     }]
   }, {
     "id": "51388483-119f-45c8-9f5a-f220fc4b20d7",
-    "name": "пробел в password",
+    "name": "gap in password",
     "commands": [{
       "id": "7921a52b-f45b-46fb-ad9b-9196e936e78d",
       "comment": "",
@@ -2624,7 +2624,7 @@
     }]
   }, {
     "id": "b80092c3-29f0-439f-9d94-aa9428acc5fc",
-    "name": "пробел в повторном password",
+    "name": "gap in  password 2",
     "commands": [{
       "id": "a71cd643-acb4-4780-b096-a758a8c46077",
       "comment": "",
@@ -2879,7 +2879,7 @@
     }]
   }, {
     "id": "0b1b91de-1f09-46e0-bbfd-293ebd5e86d5",
-    "name": "без .com",
+    "name": "without .com",
     "commands": [{
       "id": "e0e12478-291d-4cc1-9eec-84d26d9cbe9f",
       "comment": "",
@@ -3136,7 +3136,7 @@
     }]
   }, {
     "id": "f574d96c-a963-4f4b-9298-2e94c842605e",
-    "name": "разный пароль",
+    "name": "different password",
     "commands": [{
       "id": "69e6314c-5154-4685-acba-66aeaed935b7",
       "comment": "",
@@ -3376,7 +3376,7 @@
     }]
   }, {
     "id": "331384e5-47c9-43ba-afb7-84dd083ae254",
-    "name": "существующий email",
+    "name": "existing email",
     "commands": [{
       "id": "fe3d4c60-2dd0-49f6-91c4-43c5c48ac4fd",
       "comment": "",
@@ -3640,7 +3640,7 @@
     }]
   }, {
     "id": "f6192197-8acf-4e96-8f64-2b1eb14979b3",
-    "name": "существующий name ",
+    "name": "existing name ",
     "commands": [{
       "id": "c46f6747-e975-4ab0-b1ab-9e8b9170ce8c",
       "comment": "",
@@ -4391,7 +4391,7 @@
     }]
   }, {
     "id": "46a62b82-78a4-4c7e-89e0-bdbdd536dda2",
-    "name": "цифра в домене",
+    "name": "number in domain",
     "commands": [{
       "id": "3f74c0db-2a1d-4f43-b3b9-468a48d39a06",
       "comment": "",
@@ -4644,7 +4644,7 @@
     }]
   }, {
     "id": "120a40a3-b699-4fee-b052-172880a94461",
-    "name": "2 точки в домене",
+    "name": "2 dot in domain",
     "commands": [{
       "id": "ed41cf66-4c3a-4118-85a7-af8bc8e3cca4",
       "comment": "",
@@ -4875,7 +4875,7 @@
     }]
   }, {
     "id": "1bca7c16-c2db-468f-924d-7804be6f8090",
-    "name": "63 знака email",
+    "name": "63 sym email",
     "commands": [{
       "id": "add519c7-390a-4338-80b3-8d9416b293c1",
       "comment": "",
@@ -5115,7 +5115,7 @@
     }]
   }, {
     "id": "a8d26887-faac-4078-9dc9-b93367696ff3",
-    "name": "пробел после email",
+    "name": "gap after email",
     "commands": [{
       "id": "b7bb2594-a3eb-41ad-a11f-c1de2bfb0659",
       "comment": "",
@@ -5355,7 +5355,7 @@
     }]
   }, {
     "id": "a3481e8a-ab59-4456-b8d8-e843c902e89c",
-    "name": "дефис в доменной части",
+    "name": "- in domain",
     "commands": [{
       "id": "a1ee0a8c-7139-44dd-99ee-bbf8043dcb31",
       "comment": "",
@@ -5610,7 +5610,7 @@
     }]
   }, {
     "id": "a771775d-d453-4ecf-a35f-5b4c1250852f",
-    "name": "Email без имени аккаунта",
+    "name": "Email without account name",
     "commands": [{
       "id": "abfb9bca-86b2-4ff6-851a-5aa026343aaa",
       "comment": "",
@@ -5876,7 +5876,7 @@
     }]
   }, {
     "id": "43b3f8c1-04f7-4e7c-bf05-b30e78f8303d",
-    "name": "Email без доменной части",
+    "name": "Email without domain",
     "commands": [{
       "id": "6c40660e-105a-46d6-87d5-6f0e45900772",
       "comment": "",
@@ -6380,7 +6380,7 @@
     }]
   }, {
     "id": "1c83754a-81f1-45e0-bc66-1a8f27a9bbbf",
-    "name": "login спецсимволы",
+    "name": "login special characters",
     "commands": [{
       "id": "f9e62b2e-a212-4c5e-94c6-5c09555cf603",
       "comment": "",
@@ -6864,7 +6864,7 @@
     }]
   }, {
     "id": "a1290191-4461-4429-ac79-b457a17f39fe",
-    "name": "login 25 символов",
+    "name": "login 25 symbol ",
     "commands": [{
       "id": "b9cf2b04-306b-498c-9f8b-40f3ff0edfb6",
       "comment": "",
@@ -7104,7 +7104,7 @@
     }]
   }, {
     "id": "fc381b30-f79f-4085-8d87-bcfa837be507",
-    "name": "login 26 символов",
+    "name": "login 26 symbol ",
     "commands": [{
       "id": "fbdbb93e-2f8b-4fae-9a44-14f41cfcbe06",
       "comment": "",
@@ -7344,7 +7344,7 @@
     }]
   }, {
     "id": "560d4d26-3c24-432c-88d5-afd1ce7f6fcf",
-    "name": "login 27 символов",
+    "name": "login 27 symbol ",
     "commands": [{
       "id": "6e3e092f-27e4-43c8-88aa-12b2f40ac88f",
       "comment": "",
@@ -7621,7 +7621,7 @@
     }]
   }, {
     "id": "27444b70-7ef7-417f-9b9e-1c91aba41806",
-    "name": "login цифры",
+    "name": "login Numbers",
     "commands": [{
       "id": "69f2404f-bfb0-491b-a34c-719683cd8848",
       "comment": "",
@@ -7883,7 +7883,7 @@
     }]
   }, {
     "id": "0e1ad897-5772-4578-9cfe-e98099281dbf",
-    "name": "login одна буква",
+    "name": "login 1 symbol ",
     "commands": [{
       "id": "9e95e04b-b47a-403e-a056-00902aec155f",
       "comment": "",
@@ -8147,7 +8147,7 @@
     }]
   }, {
     "id": "014f0ad4-ec59-4fae-93a7-1e4416e638b8",
-    "name": "login 6 букв",
+    "name": "login 6 symbol ",
     "commands": [{
       "id": "ba60885c-c95c-4f33-b0fd-f98da508a665",
       "comment": "",
@@ -8389,7 +8389,7 @@
     }]
   }, {
     "id": "6bf810c6-3e2f-4a27-a7bb-559cef256048",
-    "name": "login 7 букв",
+    "name": "login 7 symbol ",
     "commands": [{
       "id": "d1f4ef43-806d-49b2-80d3-cbc212d9fcc9",
       "comment": "",
@@ -8655,7 +8655,7 @@
     }]
   }, {
     "id": "60e1cd63-d369-44fd-b598-dbde29c27d8f",
-    "name": "login 5 букв",
+    "name": "login 5 symbol ",
     "commands": [{
       "id": "4dfcb1e4-2b6e-4d94-a85a-36577d593f30",
       "comment": "",
@@ -8919,7 +8919,7 @@
     }]
   }, {
     "id": "6014c617-d2c1-46e1-a92d-3949c4e8d689",
-    "name": "пустое поле даты",
+    "name": "empty field data",
     "commands": [{
       "id": "e0a88031-ebcd-4a2d-9cc3-541ee325f8e6",
       "comment": "",
@@ -9089,7 +9089,7 @@
     }]
   }, {
     "id": "f64e9a7d-75ad-4314-8450-42c0f5c971da",
-    "name": "поле месяц пустое",
+    "name": "field month empty",
     "commands": [{
       "id": "4b7fe67c-cae6-4aa0-81b0-bb480fa0c6a8",
       "comment": "",
@@ -9273,7 +9273,7 @@
     }]
   }, {
     "id": "b7dd9850-2627-4ab8-8e7f-0022cc25bbfe",
-    "name": "поле год пустое",
+    "name": "field year empty",
     "commands": [{
       "id": "c86b0c50-ab13-4b52-a2d6-c8e9a6ea25f0",
       "comment": "",
@@ -9443,7 +9443,7 @@
     }]
   }, {
     "id": "aab07efd-60f6-473e-be7d-d31b8b288ab7",
-    "name": "поле дата 31",
+    "name": "field data  31",
     "commands": [{
       "id": "90154a22-d8c2-4ebd-9721-d26f616bc1d0",
       "comment": "",
@@ -9615,7 +9615,7 @@
     }]
   }, {
     "id": "0d7205b2-76ac-4995-9cfe-5ccca203845d",
-    "name": "поле дата 30",
+    "name": "field data 30",
     "commands": [{
       "id": "a9edaaae-6274-4eb1-a0c8-a9e537a2fe08",
       "comment": "",
@@ -9807,7 +9807,7 @@
     }]
   }, {
     "id": "2c913189-944c-4084-af9e-06056f2e9c1c",
-    "name": "поле дата 29",
+    "name": "field data 29",
     "commands": [{
       "id": "851e610e-b97b-48ca-8c28-fa7f591d3ea7",
       "comment": "",
@@ -10005,7 +10005,7 @@
     }]
   }, {
     "id": "21766101-04d8-4e2f-bab6-c7f77b48d72f",
-    "name": "поле дата 28",
+    "name": "field data 28",
     "commands": [{
       "id": "47e9ce7a-28eb-4027-8dc2-ea589fbb45fb",
       "comment": "",
@@ -10262,7 +10262,7 @@
     }]
   }, {
     "id": "e0f139ae-0433-4a9a-a64f-0be29e96f8f7",
-    "name": "поле дата 32",
+    "name": "field data  32",
     "commands": [{
       "id": "50783814-efa1-4890-8534-b170a912b824",
       "comment": "",
@@ -10434,7 +10434,7 @@
     }]
   }, {
     "id": "e72a9b45-7137-4609-a762-064174c5afd8",
-    "name": "поле месяц 12",
+    "name": "field month 12",
     "commands": [{
       "id": "26ca52c0-c49d-4655-9f90-0cd8bf3d2f1f",
       "comment": "",
@@ -10698,7 +10698,7 @@
     }]
   }, {
     "id": "8a8eb4af-ace3-429f-9f39-945fdb126251",
-    "name": "поле год 2022",
+    "name": "field year  2022",
     "commands": [{
       "id": "d5383479-7ccc-4069-9ecb-f95cf3763a77",
       "comment": "",
@@ -10962,7 +10962,7 @@
     }]
   }, {
     "id": "d202db3c-f79f-47bd-a77c-d9133d4c8df0",
-    "name": "поле год 2023",
+    "name": "field year 2023",
     "commands": [{
       "id": "e9812cf8-c369-4a9d-84df-ee52953bc45c",
       "comment": "",
@@ -11226,7 +11226,7 @@
     }]
   }, {
     "id": "ec62e434-6f7e-469c-a5e7-6e5fe2f13a18",
-    "name": "поле год 1900",
+    "name": "field year 1900",
     "commands": [{
       "id": "d32b5a39-f2e8-478e-837a-4f7482badc32",
       "comment": "",
@@ -11492,7 +11492,7 @@
     }]
   }, {
     "id": "127b97d0-2ca9-48f5-8f0a-e68150c71ec3",
-    "name": "login кирилица",
+    "name": "login kiril",
     "commands": [{
       "id": "3657f3ad-c392-4d41-8c9a-7bb0244a3200",
       "comment": "",
@@ -11756,7 +11756,7 @@
     }]
   }, {
     "id": "79efc991-8cb7-4c71-ac6a-d16cbd289e47",
-    "name": "пароль один символ",
+    "name": "passw 1 symb",
     "commands": [{
       "id": "b03c1d8c-c520-4fc9-b865-c315fa5908de",
       "comment": "",
@@ -12020,7 +12020,7 @@
     }]
   }, {
     "id": "71358baa-c4f4-422b-bd5b-9edb8b46809a",
-    "name": "пароль 3 символа",
+    "name": "passw 3 symb",
     "commands": [{
       "id": "b1bafc56-0fde-43fd-a806-5bdba25b09fc",
       "comment": "",
@@ -12284,7 +12284,7 @@
     }]
   }, {
     "id": "412865a1-96db-4bc8-a372-5cef2924628e",
-    "name": "пароль 4 символа",
+    "name": "passw 4 symb",
     "commands": [{
       "id": "26d727d6-cb4d-4dd3-a4e2-a38284427761",
       "comment": "",
@@ -12550,7 +12550,7 @@
     }]
   }, {
     "id": "1376b46f-7abe-4c9f-b67d-40a3414a0d29",
-    "name": "A валидные данные",
+    "name": "'A' valid data",
     "commands": [{
       "id": "2a6d383c-c7ae-4eb8-8785-a413e21f797a",
       "comment": "",
@@ -12673,7 +12673,7 @@
     }]
   }, {
     "id": "f354b809-0e41-451a-b250-8d45725f9438",
-    "name": "A пустой email",
+    "name": "A empty email",
     "commands": [{
       "id": "23d69f44-3dbc-4dd1-b712-144f2a380c93",
       "comment": "",
@@ -12787,7 +12787,7 @@
     }]
   }, {
     "id": "112e62d9-41f6-4ee3-95a3-1acf008d399d",
-    "name": "A пустой passw",
+    "name": "A empty passw",
     "commands": [{
       "id": "0ba4e708-ead2-4a47-a06b-cc5ba0a20607",
       "comment": "",
@@ -12877,7 +12877,7 @@
     }]
   }, {
     "id": "a9bb2ce2-ab5b-4655-a9a6-ccc01a6af27b",
-    "name": "A пробел в email",
+    "name": "A gap in email",
     "commands": []
   }, {
     "id": "76b9c236-10ec-4a23-aab1-84c3a6d97f90",
@@ -13028,6 +13028,254 @@
     "id": "1a6552ca-c3be-4e15-b62d-db4d05e20621",
     "name": "comment",
     "commands": []
+  }, {
+    "id": "c8292fe9-1cc1-408b-85ec-47871fcdc8d3",
+    "name": "email without @",
+    "commands": [{
+      "id": "2be64137-4b2a-4f0b-a392-ecbfc879a81f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f58ff8fa-08fa-41ed-8ef8-61421b2351e0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "793x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1445e49-cbcc-4888-a772-ab03d8d96822",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-main_black_gb",
+      "targets": [
+        ["css=.bg-main_black_gb", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e0865c6-a598-486a-b5a1-b924f1bd2698",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc7b87c0-0afd-41ae-8ab7-d15786bd43c9",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "alla.gilepladyka.by"
+    }, {
+      "id": "6790f7a4-26f8-438d-9076-5fb4e4bb40bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f504708-4dea-4af1-b9ee-651a151770ed",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "login"
+    }, {
+      "id": "fb82ac8b-3963-4ae5-af28-2a7c1c1873e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b68368a-5eef-46f5-b902-6f722e4787d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-main_blue_text",
+      "targets": [
+        ["css=.text-main_blue_text", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f89c47b7-b574-40a9-ac18-0544232b06d1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a701e872-2d5f-4f7b-a571-8f497bccf7fd",
+    "name": "without domain",
+    "commands": [{
+      "id": "712a1a61-6315-443f-be14-776a0560168e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71be75f1-1ecf-498b-af06-dbb2fa6762c3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "793x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e72ca8d8-bc08-40bb-b2c4-d1d07d516ddd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-main_black_gb",
+      "targets": [
+        ["css=.bg-main_black_gb", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e74f1e91-342d-46ae-ade9-6a7e9310e6f2",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ea18c85-438a-483a-aee2-ad2dd014a88a",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "alla.gilep@"
+    }, {
+      "id": "a06c4d74-6d54-490d-9b5c-dea4473fb0e0",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a713159d-95b8-43ad-8bf4-df1f09390cf7",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "login"
+    }, {
+      "id": "c8be675c-8b8a-4614-9a2d-558c42ce4296",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ffeb72c-c132-4189-8bd6-1e02b1b793e6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b07fcdf4-248a-4196-8087-eb560812c2b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-main_blue_text",
+      "targets": [
+        ["css=.text-main_blue_text", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2a0c7fc-ff16-4f81-8586-bcee1906d014",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "6dad89ae-e70f-4ffe-8e2f-b0605bbfdabd",
@@ -13042,7 +13290,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["1376b46f-7abe-4c9f-b67d-40a3414a0d29", "f354b809-0e41-451a-b250-8d45725f9438", "112e62d9-41f6-4ee3-95a3-1acf008d399d"]
+    "tests": ["1376b46f-7abe-4c9f-b67d-40a3414a0d29", "f354b809-0e41-451a-b250-8d45725f9438", "112e62d9-41f6-4ee3-95a3-1acf008d399d", "a701e872-2d5f-4f7b-a571-8f497bccf7fd", "b91ba85f-613c-475b-8bf7-7483290efee3"]
   }, {
     "id": "4acc8c12-6921-42db-847e-fcfd8f389acd",
     "name": "lenta",
