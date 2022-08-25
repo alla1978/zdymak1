@@ -13512,6 +13512,137 @@
       "targets": [],
       "value": ""
     }]
+  }, {
+    "id": "d31cbcc8-d21c-441a-9491-d6c5cad4796b",
+    "name": "post",
+    "commands": [{
+      "id": "1e2613c6-a051-432b-b25f-dcea322b1129",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "142aaa02-b675-4f0b-9b7f-44b51541b7d3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "793x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5295fa12-660b-4d3b-adec-c021297c7a0a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-main_black_gb",
+      "targets": [
+        ["css=.bg-main_black_gb", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "10dd9443-ddb8-4d4f-9b18-18936ae7403d",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8dd95ffe-81c7-4467-86d4-b7e4a459c08d",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "alla.gilep@ladyka.by"
+    }, {
+      "id": "094e9db4-d261-434e-9c53-871ca31191e4",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c1810c5-a1cf-4ca0-98fe-ff527cf82ceb",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "login"
+    }, {
+      "id": "6ccd9d1a-854e-4107-81fd-177f36575cb8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "743da046-9eef-4108-9e6a-f1cb2dc9496a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b89aa6e2-6c5a-4592-8036-f94a85387d7f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cursor-pointer > svg > rect",
+      "targets": [
+        ["css=.cursor-pointer > svg > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d685752a-4c4a-4bb3-87f5-8eaa678c567d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-\\[40px\\]",
+      "targets": [
+        ["css=.px-\\[40px\\]", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/label/div/div", "xpath:idRelative"],
+        ["xpath=//label/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "6dad89ae-e70f-4ffe-8e2f-b0605bbfdabd",
@@ -13533,7 +13664,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["76b9c236-10ec-4a23-aab1-84c3a6d97f90"]
+    "tests": ["76b9c236-10ec-4a23-aab1-84c3a6d97f90", "1a6552ca-c3be-4e15-b62d-db4d05e20621", "d31cbcc8-d21c-441a-9491-d6c5cad4796b"]
   }],
   "urls": ["http://zdymak.live/"],
   "plugins": []
