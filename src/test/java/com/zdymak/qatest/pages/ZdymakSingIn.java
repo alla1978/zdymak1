@@ -35,6 +35,12 @@ public class ZdymakSingIn {
 
     public String textMainSubtitle2 = "На ваш электронный адрес %s выслано письмо с подтверждением!";
 
+    public String element5 = "Проверьте правильность введенных данных";
+
+    public String textMainSubtitle3 = "Поле обязательно для заполнения";
+
+   
+
 
 
 

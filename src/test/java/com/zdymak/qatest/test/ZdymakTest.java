@@ -34,9 +34,10 @@ public class ZdymakTest {
     @Test
     public void reg() {
         zdymakMainPage.singInButton.click();
-        String email = UUID.randomUUID().toString() + "@email.com";
-        $("#email").sendKeys(email);
-        $("#nickname").sendKeys("over");
+        String nickname = UUID.randomUUID().toString().substring(0, 26);
+        String email = nickname + "@email.com";
+        zdymakSingInPage.email.sendKeys(email);
+        zdymakSingInPage.nickname.sendKeys(nickname);
         $("#birthday").sendKeys("07-02-2008");
         $("#password").sendKeys("yGuS6QgZEN2biGDvT");
         $("#passwordCheck").sendKeys("yGuS6QgZEN2biGDvT");
@@ -48,8 +49,10 @@ public class ZdymakTest {
     @Test
     public void errorSingIn() {
         zdymakMainPage.singInButton.click();
-        zdymakSingInPage.email.sendKeys("mitesh_holderyerp@independence.qz");
-        zdymakSingInPage.nickname.sendKeys("satyraku");
+        String nickname = UUID.randomUUID().toString().substring(0, 26);
+        String email = nickname + "@email.com";
+        zdymakSingInPage.email.sendKeys(email);
+        zdymakSingInPage.nickname.sendKeys(nickname);
         zdymakSingInPage.birthday.sendKeys("07-02-2008");
         zdymakSingInPage.password.sendKeys("DP22Pvn7mqg41");
         zdymakSingInPage.passwordCheck.sendKeys("    ");
@@ -70,5 +73,19 @@ public class ZdymakTest {
         zdymakSingInPage.regButton.click();
         assertEquals(zdymakSingInPage.element, $("div[class*=\"font-medium\"]").getText());
         assertEquals(String.format(zdymakSingInPage.textMainSubtitle2, email), $("div[class$=\"subtitle\"]").getText());
+    }
+    @Test
+    public void emptyEmail() {
+        zdymakMainPage.singInButton.click();
+        String email = " ";
+        String nickname = UUID.randomUUID().toString().substring(0, 26);
+        //zdymakSingInPage.email.sendKeys(email);
+        zdymakSingInPage.nickname.sendKeys(nickname);
+        zdymakSingInPage.birthday.sendKeys("10-12-2006");
+        zdymakSingInPage.password.sendKeys("gypMBh7nVsLStcMCCYc");
+        zdymakSingInPage.passwordCheck.sendKeys("gypMBh7nVsLStcMCCYc");
+        zdymakSingInPage.regButton.click();
+        assertEquals(zdymakSingInPage.element5, $("div[class*=\"font-medium\"]").getText());
+        assertEquals(String.format(zdymakSingInPage.textMainSubtitle3, email), $("div[class$=\"subtitle\"]").getText());
     }
 }
