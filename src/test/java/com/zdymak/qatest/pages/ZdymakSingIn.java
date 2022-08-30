@@ -33,7 +33,7 @@ public class ZdymakSingIn {
 
     public String element = "Спасибо за регистрацию";
 
-    public String textMainSubtitle2 = "На ваш электронный адрес alisa1999@tut.by выслано письмо с подтверждением!";
+    public String textMainSubtitle2 = "На ваш электронный адрес %s выслано письмо с подтверждением!";
 
 
 

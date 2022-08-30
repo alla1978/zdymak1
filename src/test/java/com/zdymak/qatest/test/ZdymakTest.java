@@ -60,14 +60,15 @@ public class ZdymakTest {
     @Test
     public void regOK() {
         zdymakMainPage.singInButton.click();
-        String email = UUID.randomUUID().toString() + "@email.com";
+        String nickname = UUID.randomUUID().toString().substring(0, 26);
+        String email = nickname + "@email.com";
         zdymakSingInPage.email.sendKeys(email);
-        zdymakSingInPage.nickname.sendKeys("tynianjz");
+        zdymakSingInPage.nickname.sendKeys(nickname);
         zdymakSingInPage.birthday.sendKeys("06-03-1976");
         zdymakSingInPage.password.sendKeys("BHBUY9DEKXNEsCssGqJQ1P");
         zdymakSingInPage.passwordCheck.sendKeys("BHBUY9DEKXNEsCssGqJQ1P");
         zdymakSingInPage.regButton.click();
         assertEquals(zdymakSingInPage.element, $("div[class*=\"font-medium\"]").getText());
-        assertEquals(zdymakSingInPage.textMainSubtitle2, $("div[class$=\"subtitle\"]").getText());
+        assertEquals(String.format(zdymakSingInPage.textMainSubtitle2, email), $("div[class$=\"subtitle\"]").getText());
     }
 }
