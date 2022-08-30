@@ -47,7 +47,7 @@ public class ZdymakTest {
 
 
     @Test
-    public void errorSingIn() {
+    public void emptyPasswordCheck() {
         zdymakMainPage.singInButton.click();
         String nickname = UUID.randomUUID().toString().substring(0, 26);
         String email = nickname + "@email.com";
@@ -111,6 +111,20 @@ public class ZdymakTest {
         zdymakSingInPage.nickname.sendKeys(nickname);
         zdymakSingInPage.birthday.sendKeys("");
         zdymakSingInPage.password.sendKeys("gypMBh7nVsLStcMCCYc");
+        zdymakSingInPage.passwordCheck.sendKeys("gypMBh7nVsLStcMCCYc");
+        zdymakSingInPage.regButton.click();
+        assertEquals(zdymakSingInPage.element5, $("div[class*=\"font-medium\"]").getText());
+        assertEquals(String.format(zdymakSingInPage.textMainSubtitle3, email), $("div[class$=\"subtitle\"]").getText());
+    }
+    @Test
+    public void emptyPass() {
+        zdymakMainPage.singInButton.click();
+        String nickname = UUID.randomUUID().toString().substring(0, 26);
+        String email =nickname+ "@email.com";
+        zdymakSingInPage.email.sendKeys(email);
+        zdymakSingInPage.nickname.sendKeys(nickname);
+        zdymakSingInPage.birthday.sendKeys("11-12-1989");
+        zdymakSingInPage.password.sendKeys("");
         zdymakSingInPage.passwordCheck.sendKeys("gypMBh7nVsLStcMCCYc");
         zdymakSingInPage.regButton.click();
         assertEquals(zdymakSingInPage.element5, $("div[class*=\"font-medium\"]").getText());
