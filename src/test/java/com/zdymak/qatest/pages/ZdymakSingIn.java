@@ -31,6 +31,11 @@ public class ZdymakSingIn {
     public SelenideElement errorMass = $("div[class$=\"subtitle\"]");
     public SelenideElement textMainSubtitle = $("div[class$=\"subtitle\"]");
 
+    public String element = "Спасибо за регистрацию";
+
+    public String textMainSubtitle2 = "На ваш электронный адрес alisa1999@tut.by выслано письмо с подтверждением!";
+
+
 
 
 
