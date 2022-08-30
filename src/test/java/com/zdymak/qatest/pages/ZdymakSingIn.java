@@ -10,13 +10,13 @@ import static com.codeborne.selenide.Selenide.$x;
 public class ZdymakSingIn {
     public SelenideElement email = $("#email");
 
-    public SelenideElement nickname = $("label[for=\"nickname\"]");
+    public SelenideElement nickname = $("#nickname");
 
     public SelenideElement birthday = $("#birthday");
 
     public SelenideElement password = $("#password");
 
-    public SelenideElement element = $("label[for=\"passwordCheck\"]");
+    public SelenideElement passwordCheck = $("#passwordCheck");
 
     public SelenideElement errHeader = $("div[class*=\"font-medium\"]");
 
@@ -25,5 +25,13 @@ public class ZdymakSingIn {
     public SelenideElement element2 = $("div[class*=\"font-medium\"]");
 
     public SelenideElement element3 = $(byText("Проверьте правильность введенных данных"));
+
+    public SelenideElement element4 = $("div[class*=\"font-medium\"]");
+
+    public SelenideElement errorMass = $("div[class$=\"subtitle\"]");
+    public SelenideElement textMainSubtitle = $("div[class$=\"subtitle\"]");
+
+
+
 
 }
