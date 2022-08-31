@@ -3,7 +3,8 @@ package com.zdymak.qatest.test;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import com.zdymak.qatest.pages.ZdymakMainPage;
-import com.zdymak.qatest.pages.ZdymakSingIn;
+import com.zdymak.qatest.pages.ZdymakSignInPage;
+import com.zdymak.qatest.pages.ZdymakSingUp;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,8 +17,9 @@ import static com.codeborne.selenide.Selenide.open;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ZdymakTest {
-    ZdymakSingIn zdymakSingInPage = new ZdymakSingIn();
+    ZdymakSingUp zdymakSingUpPage = new ZdymakSingUp();
     ZdymakMainPage zdymakMainPage = new ZdymakMainPage();
+    ZdymakSignInPage zdymakSignInPage = new ZdymakSignInPage();
 
     @BeforeAll
     public static void setUpAll() {
@@ -33,87 +35,99 @@ public class ZdymakTest {
 
     @Test
     public void emptyPasswordCheck() {
-        zdymakMainPage.singInButton.click();
+        zdymakMainPage.singUpButton.click();
         String nickname = UUID.randomUUID().toString().substring(0, 26);
         String email = nickname + "@email.com";
-        zdymakSingInPage.email.sendKeys(email);
-        zdymakSingInPage.nickname.sendKeys(nickname);
-        zdymakSingInPage.birthday.sendKeys("07-02-2008");
-        zdymakSingInPage.password.sendKeys("DP22Pvn7mqg41");
-        zdymakSingInPage.passwordCheck.sendKeys("");
-        zdymakSingInPage.regButton.click();
-        assertEquals(zdymakSingInPage.repeatPassword, $("div[class$=\"subtitle\"]").getText());
+        zdymakSingUpPage.email.sendKeys(email);
+        zdymakSingUpPage.nickname.sendKeys(nickname);
+        zdymakSingUpPage.birthday.sendKeys("07-02-2008");
+        zdymakSingUpPage.password.sendKeys("DP22Pvn7mqg41");
+        zdymakSingUpPage.passwordCheck.sendKeys("");
+        zdymakSingUpPage.regButton.click();
+        assertEquals(zdymakSingUpPage.repeatPassword, $("div[class$=\"subtitle\"]").getText());
     }
 
     @Test
     public void regOK() {
-        zdymakMainPage.singInButton.click();
+        zdymakMainPage.singUpButton.click();
         String nickname = UUID.randomUUID().toString().substring(0, 26);
         String email = nickname + "@email.com";
-        zdymakSingInPage.email.sendKeys(email);
-        zdymakSingInPage.nickname.sendKeys(nickname);
-        zdymakSingInPage.birthday.sendKeys("06-03-1976");
-        zdymakSingInPage.password.sendKeys("BHBUY9DEKXNEsCssGqJQ1P");
-        zdymakSingInPage.passwordCheck.sendKeys("BHBUY9DEKXNEsCssGqJQ1P");
-        zdymakSingInPage.regButton.click();
-        assertEquals(zdymakSingInPage.element, $("div[class*=\"font-medium\"]").getText());
-        assertEquals(String.format(zdymakSingInPage.textMainSubtitle2, email), $("div[class$=\"subtitle\"]").getText());
-        zdymakSingInPage.buttonOk.click();
+        zdymakSingUpPage.email.sendKeys(email);
+        zdymakSingUpPage.nickname.sendKeys(nickname);
+        zdymakSingUpPage.birthday.sendKeys("06-03-1976");
+        zdymakSingUpPage.password.sendKeys("BHBUY9DEKXNEsCssGqJQ1P");
+        zdymakSingUpPage.passwordCheck.sendKeys("BHBUY9DEKXNEsCssGqJQ1P");
+        zdymakSingUpPage.regButton.click();
+        assertEquals(zdymakSingUpPage.element, $("div[class*=\"font-medium\"]").getText());
+        assertEquals(String.format(zdymakSingUpPage.textMainSubtitle2, email), $("div[class$=\"subtitle\"]").getText());
+        zdymakSingUpPage.buttonOk.click();
     }
+
     @Test
     public void emptyEmail() {
-        zdymakMainPage.singInButton.click();
+        zdymakMainPage.singUpButton.click();
         String email = " ";
         String nickname = UUID.randomUUID().toString().substring(0, 26);
         //zdymakSingInPage.email.sendKeys(email);
-        zdymakSingInPage.nickname.sendKeys(nickname);
-        zdymakSingInPage.birthday.sendKeys("10-12-2006");
-        zdymakSingInPage.password.sendKeys("gypMBh7nVsLStcMCCYc");
-        zdymakSingInPage.passwordCheck.sendKeys("gypMBh7nVsLStcMCCYc");
-        zdymakSingInPage.regButton.click();
-        assertEquals(zdymakSingInPage.checkInput, $("div[class*=\"font-medium\"]").getText());
-        assertEquals(zdymakSingInPage.requiredToFill, $("div[class$=\"subtitle\"]").getText());
+        zdymakSingUpPage.nickname.sendKeys(nickname);
+        zdymakSingUpPage.birthday.sendKeys("10-12-2006");
+        zdymakSingUpPage.password.sendKeys("gypMBh7nVsLStcMCCYc");
+        zdymakSingUpPage.passwordCheck.sendKeys("gypMBh7nVsLStcMCCYc");
+        zdymakSingUpPage.regButton.click();
+        assertEquals(zdymakSingUpPage.checkInput, $("div[class*=\"font-medium\"]").getText());
+        assertEquals(zdymakSingUpPage.requiredToFill, $("div[class$=\"subtitle\"]").getText());
     }
+
     @Test
     public void emptyNickName() {
-        zdymakMainPage.singInButton.click();
+        zdymakMainPage.singUpButton.click();
         String nickname = UUID.randomUUID().toString().substring(0, 26);
-        String email =nickname+ "@email.com";
-        zdymakSingInPage.email.sendKeys(email);
-        zdymakSingInPage.nickname.sendKeys("");
-        zdymakSingInPage.birthday.sendKeys("10-12-2006");
-        zdymakSingInPage.password.sendKeys("gypMBh7nVsLStcMCCYc");
-        zdymakSingInPage.passwordCheck.sendKeys("gypMBh7nVsLStcMCCYc");
-        zdymakSingInPage.regButton.click();
-        assertEquals(zdymakSingInPage.checkInput, $("div[class*=\"font-medium\"]").getText());
-        assertEquals(zdymakSingInPage.requiredToFill, $("div[class$=\"subtitle\"]").getText());
+        String email = nickname + "@email.com";
+        zdymakSingUpPage.email.sendKeys(email);
+        zdymakSingUpPage.nickname.sendKeys("");
+        zdymakSingUpPage.birthday.sendKeys("10-12-2006");
+        zdymakSingUpPage.password.sendKeys("gypMBh7nVsLStcMCCYc");
+        zdymakSingUpPage.passwordCheck.sendKeys("gypMBh7nVsLStcMCCYc");
+        zdymakSingUpPage.regButton.click();
+        assertEquals(zdymakSingUpPage.checkInput, $("div[class*=\"font-medium\"]").getText());
+        assertEquals(zdymakSingUpPage.requiredToFill, $("div[class$=\"subtitle\"]").getText());
     }
+
     @Test
     public void emptyBirthday() {
-        zdymakMainPage.singInButton.click();
+        zdymakMainPage.singUpButton.click();
         String nickname = UUID.randomUUID().toString().substring(0, 26);
-        String email =nickname+ "@email.com";
-        zdymakSingInPage.email.sendKeys(email);
-        zdymakSingInPage.nickname.sendKeys(nickname);
-        zdymakSingInPage.birthday.sendKeys("");
-        zdymakSingInPage.password.sendKeys("gypMBh7nVsLStcMCCYc");
-        zdymakSingInPage.passwordCheck.sendKeys("gypMBh7nVsLStcMCCYc");
-        zdymakSingInPage.regButton.click();
-        assertEquals(zdymakSingInPage.checkInput, $("div[class*=\"font-medium\"]").getText());
-        assertEquals(zdymakSingInPage.requiredToFill, $("div[class$=\"subtitle\"]").getText());
+        String email = nickname + "@email.com";
+        zdymakSingUpPage.email.sendKeys(email);
+        zdymakSingUpPage.nickname.sendKeys(nickname);
+        zdymakSingUpPage.birthday.sendKeys("");
+        zdymakSingUpPage.password.sendKeys("gypMBh7nVsLStcMCCYc");
+        zdymakSingUpPage.passwordCheck.sendKeys("gypMBh7nVsLStcMCCYc");
+        zdymakSingUpPage.regButton.click();
+        assertEquals(zdymakSingUpPage.checkInput, $("div[class*=\"font-medium\"]").getText());
+        assertEquals(zdymakSingUpPage.requiredToFill, $("div[class$=\"subtitle\"]").getText());
     }
+
     @Test
     public void emptyPass() {
-        zdymakMainPage.singInButton.click();
+        zdymakMainPage.singUpButton.click();
         String nickname = UUID.randomUUID().toString().substring(0, 26);
-        String email =nickname+ "@email.com";
-        zdymakSingInPage.email.sendKeys(email);
-        zdymakSingInPage.nickname.sendKeys(nickname);
-        zdymakSingInPage.birthday.sendKeys("11-12-1989");
-        zdymakSingInPage.password.sendKeys("");
-        zdymakSingInPage.passwordCheck.sendKeys("gypMBh7nVsLStcMCCYc");
-        zdymakSingInPage.regButton.click();
-        assertEquals(zdymakSingInPage.checkInput, $("div[class*=\"font-medium\"]").getText());
-        assertEquals(zdymakSingInPage.checkPassword, $("div[class$=\"subtitle\"]").getText());
+        String email = nickname + "@email.com";
+        zdymakSingUpPage.email.sendKeys(email);
+        zdymakSingUpPage.nickname.sendKeys(nickname);
+        zdymakSingUpPage.birthday.sendKeys("11-12-1989");
+        zdymakSingUpPage.password.sendKeys("");
+        zdymakSingUpPage.passwordCheck.sendKeys("gypMBh7nVsLStcMCCYc");
+        zdymakSingUpPage.regButton.click();
+        assertEquals(zdymakSingUpPage.checkInput, $("div[class*=\"font-medium\"]").getText());
+        assertEquals(zdymakSingUpPage.checkPassword, $("div[class$=\"subtitle\"]").getText());
+    }
+
+    @Test
+    public void singIn() {
+        zdymakMainPage.singInButton.click();
+        zdymakSignInPage.username.sendKeys("yaugen.kulik@ladyka.by");
+        zdymakSignInPage.password.sendKeys("12345q");
+        zdymakSignInPage.button.click();
     }
 }

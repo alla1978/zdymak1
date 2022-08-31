@@ -6,6 +6,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 // page_url = http://qa.zdymak.live/
 public class ZdymakMainPage {
-    public SelenideElement singInButton = $("button[class*=\"blue\"]");
+    public SelenideElement singUpButton = $("button[class*=\"blue\"]");
 
+    public SelenideElement singInButton = $("button[class*=\"black\"]");
 }
