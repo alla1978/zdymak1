@@ -9,6 +9,9 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebDriver;
 
 import java.util.UUID;
 
@@ -119,15 +122,29 @@ public class ZdymakTest {
         zdymakSingUpPage.password.sendKeys("");
         zdymakSingUpPage.passwordCheck.sendKeys("gypMBh7nVsLStcMCCYc");
         zdymakSingUpPage.regButton.click();
-        assertEquals(zdymakSingUpPage.checkInput, $("div[class*=\"font-medium\"]").getText());
         assertEquals(zdymakSingUpPage.checkPassword, $("div[class$=\"subtitle\"]").getText());
     }
 
     @Test
-    public void singIn() {
-        zdymakMainPage.singInButton.click();
-        zdymakSignInPage.username.sendKeys("yaugen.kulik@ladyka.by");
-        zdymakSignInPage.password.sendKeys("12345q");
-        zdymakSignInPage.button.click();
+    public void emailwithoutaccountname() {
+        zdymakMainPage.singUpButton.click();
+        String nickname = UUID.randomUUID().toString().substring(0, 26);
+        String email = "@email.com";
+        zdymakSingUpPage.email.sendKeys(email);
+        zdymakSingUpPage.nickname.sendKeys(nickname);
+        zdymakSingUpPage.birthday.sendKeys("11-12-1989");
+        zdymakSingUpPage.password.sendKeys("gypMBh7nVsLStcMCCYc");
+        zdymakSingUpPage.passwordCheck.sendKeys("gypMBh7nVsLStcMCCYc");
+        zdymakSingUpPage.regButton.click();
+        assertEquals(zdymakSingUpPage.checkInput, $("div[class*=\"font-medium\"]").getText());
+        assertEquals(zdymakSingUpPage.emailOK, $("div[class$=\"subtitle\"]").getText());
     }
 }
+    //@Test
+   // public void singIn() {
+     //   zdymakMainPage.singInButton.click();
+      //  zdymakSignInPage.username.sendKeys("yaugen.kulik@ladyka.by");
+      //  zdymakSignInPage.password.sendKeys("12345q");
+     //   zdymakSignInPage.button.click();
+    //}
+

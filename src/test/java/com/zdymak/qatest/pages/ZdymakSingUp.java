@@ -33,5 +33,7 @@ public class ZdymakSingUp {
 
     public SelenideElement buttonOk = $("button[class^=\"text-main\"]");
 
+    public SelenideElement emailOK = $("div[class$=\"subtitle\"]");
+
 
 }
