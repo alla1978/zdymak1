@@ -140,7 +140,7 @@ public class ZdymakTest {
         assertEquals(zdymakSingUpPage.emailOK, $("div[class$=\"subtitle\"]").getText());
     }
     @Test
-    public void emailTwoSymbol() {
+    public void emailTwoSymbol() { // два @@
         zdymakMainPage.singUpButton.click();
         String nickname = UUID.randomUUID().toString().substring(0, 26);
         String email = nickname + "@@email.com";
@@ -152,6 +152,36 @@ public class ZdymakTest {
         zdymakSingUpPage.regButton.click();
         assertEquals(zdymakSingUpPage.checkInput, $("div[class*=\"font-medium\"]").getText());
         assertEquals(zdymakSingUpPage.emailOK, $("div[class$=\"subtitle\"]").getText());
+    }
+
+    @Test
+    public void emailWithoutCom() { // без .com
+        zdymakMainPage.singUpButton.click();
+        String nickname = UUID.randomUUID().toString().substring(0, 26);
+        String email = nickname + "@email.";
+        zdymakSingUpPage.email.sendKeys(email);
+        zdymakSingUpPage.nickname.sendKeys(nickname);
+        zdymakSingUpPage.birthday.sendKeys("11-12-1989");
+        zdymakSingUpPage.password.sendKeys("gypMBh7nVsLStcMCCYc");
+        zdymakSingUpPage.passwordCheck.sendKeys("gypMBh7nVsLStcMCCYc");
+        zdymakSingUpPage.regButton.click();
+        assertEquals(zdymakSingUpPage.checkInput, $("div[class*=\"font-medium\"]").getText());
+        assertEquals(zdymakSingUpPage.emailOK, $("div[class$=\"subtitle\"]").getText());
+    }
+    @Test
+    public void emailTwoDotCom() { // @69.com.ru
+        zdymakMainPage.singUpButton.click();
+        String nickname = UUID.randomUUID().toString().substring(0, 26);
+        String email = nickname + "@email.com.ru";
+        zdymakSingUpPage.email.sendKeys(email);
+        zdymakSingUpPage.nickname.sendKeys(nickname);
+        zdymakSingUpPage.birthday.sendKeys("11-12-1989");
+        zdymakSingUpPage.password.sendKeys("gypMBh7nVsLStcMCCYc");
+        zdymakSingUpPage.passwordCheck.sendKeys("gypMBh7nVsLStcMCCYc");
+        zdymakSingUpPage.regButton.click();
+        assertEquals(zdymakSingUpPage.element, $("div[class*=\"font-medium\"]").getText());
+        assertEquals(String.format(zdymakSingUpPage.textMainSubtitle2, email), $("div[class$=\"subtitle\"]").getText());
+        zdymakSingUpPage.buttonOk.click();
     }
 }
     //@Test
