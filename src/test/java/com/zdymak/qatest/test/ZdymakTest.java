@@ -197,6 +197,21 @@ public class ZdymakTest {
             assertEquals(zdymakSingUpPage.checkInput, $("div[class*=\"font-medium\"]").getText());
             assertEquals(zdymakSingUpPage.emailOK, $("div[class$=\"subtitle\"]").getText());
         }
+    @Test
+    public void differentPass() { //
+        zdymakMainPage.singUpButton.click();
+        String nickname = UUID.randomUUID().toString().substring(0, 26);
+        String email = nickname + "@mail.com";
+        zdymakSingUpPage.email.sendKeys(email);
+        zdymakSingUpPage.nickname.sendKeys(nickname);
+        zdymakSingUpPage.birthday.sendKeys("11-12-1989");
+        zdymakSingUpPage.password.sendKeys("LsXztM87QYNkubXLaly");
+        zdymakSingUpPage.passwordCheck.sendKeys("gypMBh7nVsLStcMCCYc");
+        zdymakSingUpPage.regButton.click();
+        assertEquals(zdymakSingUpPage.checkInput, $("div[class*=\"font-medium\"]").getText());
+        assertEquals(zdymakSingUpPage.checkPass, $("div[class$=\"subtitle\"]").getText());
+    }
+
 }
     //@Test
    // public void singIn() {

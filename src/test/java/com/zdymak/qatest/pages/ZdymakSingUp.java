@@ -31,11 +31,13 @@ public class ZdymakSingUp {
     public String checkPassword = "Пароли не совпадают\n" +
             requiredToFill;
 
+    public String checkPass = "Пароли не совпадают";
+
     public String emailOK = "Введите действительный E-mail";
 
     public SelenideElement buttonOk = $("button[class^=\"text-main\"]");
 
-    //public SelenideElement emailOK = $("div[class$=\"subtitle\"]");
+
 
 
 }
