@@ -307,4 +307,22 @@ public class ZdymakTest {
         assertEquals(zdymakSingUpPage.checkInput, $("div[class*=\"font-medium\"]").getText());
         assertEquals(zdymakSingUpPage.requiredToFill, $("div[class$=\"subtitle\"]").getText());
     }
+    @Test
+    public void emailwithoutSymbol() {
+        zdymakMainPage.singInButton.click();
+        zdymakSignInPage.username.sendKeys(" yaugen.kulikladyka.by");
+        zdymakSignInPage.password.sendKeys("12345q");
+        zdymakSignInPage.button.click();
+        assertEquals(zdymakSingUpPage.emailPasswmail, $("div[class*=\"font-medium\"]").getText());
+        assertEquals(zdymakSingUpPage.emailPassw, $("div[class$=\"subtitle\"]").getText());
+    }
+    //@Test
+    //public void singPassWithoutName() {
+      //  zdymakMainPage.singInButton.click();
+      //  zdymakSignInPage.username.sendKeys("@ladyka.by");
+      //  zdymakSignInPage.password.sendKeys("12345q");
+      //  zdymakSignInPage.button.click();
+      //  assertEquals(zdymakSingUpPage.emailPasswmail, $("div[class*=\"font-medium\"]").getText());
+     //   assertEquals(zdymakSingUpPage.emailPassw, $("div[class$=\"subtitle\"]").getText());
+   // }
 }

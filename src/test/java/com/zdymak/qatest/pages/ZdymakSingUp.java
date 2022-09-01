@@ -6,7 +6,8 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
 
 // page_url = http://qa.zdymak.live/sign-up
-public class ZdymakSingUp {
+public class ZdymakSingUp
+{
     public SelenideElement email = $("#email");
 
     public SelenideElement nickname = $("#nickname");
@@ -26,6 +27,10 @@ public class ZdymakSingUp {
     public String textMainSubtitle2 = "На ваш электронный адрес %s выслано письмо с подтверждением!";
 
     public String checkInput = "Проверьте правильность введенных данных";
+
+    public String emailPasswmail = "Неверный email или пароль";
+
+    public String emailPassw = "Введен неверный email или пароль.Попробуйте еще раз";
 
     public String requiredToFill = "Поле обязательно для заполнения";
     public String checkPassword = "Пароли не совпадают\n" +
