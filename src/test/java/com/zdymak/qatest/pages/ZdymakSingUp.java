@@ -30,7 +30,7 @@ public class ZdymakSingUp
 
     public String emailPasswmail = "Неверный email или пароль";
 
-    public String emailPassw = "Введен неверный email или пароль.Попробуйте еще раз";
+    public String emailPassw = "Введен неверный email или пароль.Попробуйте еще раз.";
 
     public String requiredToFill = "Поле обязательно для заполнения";
     public String checkPassword = "Пароли не совпадают\n" +
