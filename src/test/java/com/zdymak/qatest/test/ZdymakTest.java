@@ -277,7 +277,7 @@ public class ZdymakTest {
         zdymakSingUpPage.nickname.sendKeys(nickname);
         zdymakSingUpPage.birthday.sendKeys("02-03-1999");
         zdymakSingUpPage.password.sendKeys("LsXztM87QYNkubXLaly");
-        zdymakSingUpPage.passwordCheck.sendKeys("LsXzt207QYNkubXLaly");
+        zdymakSingUpPage.passwordCheck.sendKeys("LsXztM87QYNkubXLaly");
         zdymakSingUpPage.regButton.click();
         assertEquals(zdymakSingUpPage.checkInput, $("div[class*=\"font-medium\"]").getText());
         assertEquals(zdymakSingUpPage.nickName, $("div[class$=\"subtitle\"]").getText());
@@ -341,4 +341,6 @@ public class ZdymakTest {
     assertEquals(zdymakSingUpPage.emailPasswmail, $("div[class*=\"font-medium\"]").getText());
     assertEquals(zdymakSingUpPage.emailPassw, $("div[class$=\"subtitle\"]").getText());
    }
+
+
 }
