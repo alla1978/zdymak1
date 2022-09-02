@@ -27,6 +27,7 @@ public class ZdymakSingUp
     public String textMainSubtitle2 = "На ваш электронный адрес %s выслано письмо с подтверждением!";
 
     public String checkInput = "Проверьте правильность введенных данных";
+    public String nickName = "Никнейм не может быть длиннее 26 символов.";
 
     public String emailPasswmail = "Неверный email или пароль";
 

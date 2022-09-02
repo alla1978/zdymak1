@@ -280,7 +280,7 @@ public class ZdymakTest {
         zdymakSingUpPage.passwordCheck.sendKeys("LsXzt207QYNkubXLaly");
         zdymakSingUpPage.regButton.click();
         assertEquals(zdymakSingUpPage.checkInput, $("div[class*=\"font-medium\"]").getText());
-        assertEquals(zdymakSingUpPage.checkPass, $("div[class$=\"subtitle\"]").getText());
+        assertEquals(zdymakSingUpPage.nickName, $("div[class$=\"subtitle\"]").getText());
     }
     @Test
    public void singIn() {
