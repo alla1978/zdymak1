@@ -5,7 +5,7 @@ import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
 
-// page_url = http://qa.zdymak.live/sign-up
+// page_url = http://zdymak.live/sign-up
 public class ZdymakSingUp
 {
     public SelenideElement email = $("#email");

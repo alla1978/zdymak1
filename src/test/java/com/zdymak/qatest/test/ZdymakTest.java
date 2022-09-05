@@ -1,8 +1,10 @@
 package com.zdymak.qatest.test;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import com.zdymak.qatest.pages.ZdymakMainPage;
+import com.zdymak.qatest.pages.ZdymakPostPage;
 import com.zdymak.qatest.pages.ZdymakSignInPage;
 import com.zdymak.qatest.pages.ZdymakSingUp;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -34,7 +36,7 @@ public class ZdymakTest {
 
     @BeforeEach
     public void setUp() {
-        open("http://qa.zdymak.live");
+        open("http://zdymak.live");
     }
 
     @Test
@@ -368,4 +370,16 @@ public class ZdymakTest {
         assertEquals(zdymakSingUpPage.emailLength, $("div[class$=\"subtitle\"]").getText());
     }
 
+    @Test
+    public void post () {
+        zdymakMainPage.singInButton.click();
+        zdymakSignInPage.username.sendKeys("seroiffoyija-7958@yopmail.com");
+        zdymakSignInPage.password.sendKeys("test");
+        zdymakSignInPage.button.click();
+        ZdymakPostPage.elementPost.click();
+        ZdymakPostPage.elementPhoto.click();
+        ZdymakPostPage.imgInput = $("div[class*=\flex justify-center\"]");
+
+        //ZdymakPostPage.elementFurther.click();
+    }
 }
