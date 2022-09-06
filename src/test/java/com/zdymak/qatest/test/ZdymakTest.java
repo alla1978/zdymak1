@@ -378,7 +378,7 @@ public class ZdymakTest {
         zdymakSignInPage.button.click();
         ZdymakPostPage.elementPost.click();
         ZdymakPostPage.elementPhoto.click();
-        ZdymakPostPage.imgInput = $("div[class*=\flex justify-center\"]");
+        ZdymakPostPage.file.sendKeys("div[class*=\"flex justify-center\"]");
 
         //ZdymakPostPage.elementFurther.click();
     }
