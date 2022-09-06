@@ -12,13 +12,21 @@ import static com.codeborne.selenide.Selenide.*;
 public class ZdymakPostPage {
 
     public SelenideElement elementPost = $("div[class*=\"justify-between\"]");
-    public SelenideElement elementPhoto = $("div[class*=\"text-white\"]");
+
 
     public SelenideElement file2 = $(byName("file"));
+    public SelenideElement further = $x("//button");
 
-    public SelenideElement further = $("div[class*=\"grid-cols-3\"]");
+    public SelenideElement comment1 = $x("//textarea");
 
-    public SelenideElement comment = $("div[class*=\"grid-cols-3\"]");
+
+    public SelenideElement share = $x("//button");
+
+
+
+
+
+
 
 
 

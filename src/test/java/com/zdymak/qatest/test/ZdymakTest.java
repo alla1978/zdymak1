@@ -395,7 +395,8 @@ public class ZdymakTest {
         zdymakPostPage.elementPost.click();
         zdymakPostPage.file2.sendKeys("C:\\Users\\admin\\IdeaProjects\\selenium_qa\\src\\test\\java\\img\\081d0f17f01653f870e5dc15c4b78482.jpg");
         zdymakPostPage.further.click();
-        zdymakPostPage.comment.sendKeys("test");
+        zdymakPostPage.comment1.sendKeys("текст");
+        zdymakPostPage.share.click();
 
     }
 }
