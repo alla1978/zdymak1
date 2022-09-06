@@ -393,9 +393,9 @@ public class ZdymakTest {
         zdymakSignInPage.password.sendKeys("test");
         zdymakSignInPage.button.click();
         zdymakPostPage.elementPost.click();
-        zdymakPostPage.file2.sendKeys("C:\\Users\\admin\\IdeaProjects\\selenium_qa\\src\\test\\java\\img\\081d0f17f01653f870e5dc15c4b78482.jpg");
+        zdymakPostPage.file2.sendKeys("C:\\Users\\admin\\IdeaProjects\\selenium_qa\\src\\test\\java\\img\\2a61a60a838b136de6d56796e0365baa.jpg");
         zdymakPostPage.further.click();
-        zdymakPostPage.comment1.sendKeys("текст");
+        zdymakPostPage.comment1.sendKeys("12p1k31o3o2");
         zdymakPostPage.share.click();
 
     }

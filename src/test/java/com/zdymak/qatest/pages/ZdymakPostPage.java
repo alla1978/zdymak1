@@ -17,10 +17,12 @@ public class ZdymakPostPage {
     public SelenideElement file2 = $(byName("file"));
     public SelenideElement further = $x("//button");
 
-    public SelenideElement comment1 = $x("//textarea");
+   public SelenideElement comment1 = $x("//textarea");
 
 
     public SelenideElement share = $x("//button");
+
+
 
 
 
