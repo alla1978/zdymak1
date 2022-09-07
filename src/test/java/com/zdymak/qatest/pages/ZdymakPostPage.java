@@ -10,18 +10,18 @@ import static com.codeborne.selenide.Selenide.*;
 // page_url = http://zdymak.live/sign-in
 
 public class ZdymakPostPage {
-
-    public SelenideElement elementPost = $("div[class*=\"justify-between\"]");
-
-
-    public SelenideElement file2 = $(byName("file"));
+    public SelenideElement elementPlus = $x("//span");
+    public SelenideElement elementSelectPhoto = $x("//div[contains(@class, \"px-[40px]\")]");
+      public SelenideElement file2 = $(byName("file"));
     public SelenideElement further = $x("//button");
-
-   public SelenideElement comment1 = $x("//textarea");
-
 
     public SelenideElement share = $x("//button");
 
+   //public SelenideElement comment  = $("#comment");
+
+    public SelenideElement element = $x("//textarea");
+
+    public SelenideElement comment = $("textarea[class$=\"resize-none\"]");
 
 
 
@@ -30,6 +30,15 @@ public class ZdymakPostPage {
 
 
 
+
+
+
+
+
+
+
+
+    
 
 
 

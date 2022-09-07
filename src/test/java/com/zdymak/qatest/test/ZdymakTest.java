@@ -392,10 +392,11 @@ public class ZdymakTest {
         zdymakSignInPage.username.sendKeys("seroiffoyija-7958@yopmail.com");
         zdymakSignInPage.password.sendKeys("test");
         zdymakSignInPage.button.click();
-        zdymakPostPage.elementPost.click();
-        zdymakPostPage.file2.sendKeys("C:\\Users\\admin\\IdeaProjects\\selenium_qa\\src\\test\\java\\img\\2a61a60a838b136de6d56796e0365baa.jpg");
+        zdymakPostPage.elementPlus.click();
+        zdymakPostPage.elementSelectPhoto.click();
+        zdymakPostPage.file2.sendKeys("C:\\Users\\admin\\IdeaProjects\\selenium_qa\\src\\test\\java\\img\\26ee2af59691b87bf6a474a334eb9db6.jpg");
         zdymakPostPage.further.click();
-        zdymakPostPage.comment1.sendKeys("12p1k31o3o2");
+        zdymakPostPage.comment.sendKeys("привет мир");
         zdymakPostPage.share.click();
 
     }
