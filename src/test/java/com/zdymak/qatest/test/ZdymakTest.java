@@ -17,8 +17,7 @@ import org.openqa.selenium.WebDriver;
 
 import java.util.UUID;
 
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ZdymakTest {
@@ -394,10 +393,23 @@ public class ZdymakTest {
         zdymakSignInPage.button.click();
         zdymakPostPage.elementPlus.click();
         zdymakPostPage.elementSelectPhoto.click();
-        zdymakPostPage.file2.sendKeys("C:\\Users\\admin\\IdeaProjects\\selenium_qa\\src\\test\\java\\img\\26ee2af59691b87bf6a474a334eb9db6.jpg");
+        zdymakPostPage.file2.sendKeys("C:\\Users\\admin\\IdeaProjects\\selenium_qa\\src\\test\\java\\img\\26c26e4ed479d7793968c5a3ee3f86c3.gif");
         zdymakPostPage.further.click();
         zdymakPostPage.comment.sendKeys("привет мир");
         zdymakPostPage.share.click();
 
+    }
+
+    @Test
+    public void postComment() {
+        zdymakMainPage.singInButton.click();
+        zdymakSignInPage.username.sendKeys("seroiffoyija-7958@yopmail.com");
+        zdymakSignInPage.password.sendKeys("test");
+        zdymakSignInPage.button.click();
+        zdymakPostPage.pageHome.click();
+        zdymakPostPage.elementClickPhoto.click();
+        zdymakPostPage.elementPencil.click();
+        zdymakPostPage.elementAddComment.sendKeys("grerbrbrbrbrbrbrbrbrbrbrb");
+        //zdymakPostPage.elementSave.click();
     }
 }

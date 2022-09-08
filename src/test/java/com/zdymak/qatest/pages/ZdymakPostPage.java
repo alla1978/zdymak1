@@ -17,11 +17,23 @@ public class ZdymakPostPage {
 
     public SelenideElement share = $x("//button");
 
-   //public SelenideElement comment  = $("#comment");
+       public SelenideElement comment = $("textarea[class$=\"resize-none\"]");
 
-    public SelenideElement element = $x("//textarea");
+    public SelenideElement pageHome = $x("//a[@href=\"/seroiffoyija-7958\"]");
 
-    public SelenideElement comment = $("textarea[class$=\"resize-none\"]");
+    public SelenideElement elementClickPhoto = $x("//img[@src=\"https://storage.yandexcloud.net/zdymak-media/2022/9/7/13322f0e-4159-4877-2482-b8504123c361.jpeg\"]");
+
+
+    public SelenideElement elementSave = $x("//button");
+
+
+
+    public SelenideElement elementAddComment  = $("textarea[class$=\"resize-none\"]");
+
+
+
+
+
 
 
 
