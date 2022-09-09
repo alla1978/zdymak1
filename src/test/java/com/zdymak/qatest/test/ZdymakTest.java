@@ -1,7 +1,6 @@
 package com.zdymak.qatest.test;
 
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import com.zdymak.qatest.pages.ZdymakMainPage;
 import com.zdymak.qatest.pages.ZdymakPostPage;
@@ -11,9 +10,6 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebDriver;
 
 import java.util.UUID;
 
@@ -386,7 +382,7 @@ public class ZdymakTest {
     }
 
     @Test
-    public void post() {
+    public void addPhotoAndPost() {
         zdymakMainPage.singInButton.click();
         zdymakSignInPage.username.sendKeys("seroiffoyija-7958@yopmail.com");
         zdymakSignInPage.password.sendKeys("test");
@@ -401,7 +397,7 @@ public class ZdymakTest {
     }
 
     @Test
-    public void postComment() {
+    public void editingPost() {
         zdymakMainPage.singInButton.click();
         zdymakSignInPage.username.sendKeys("seroiffoyija-7958@yopmail.com");
         zdymakSignInPage.password.sendKeys("test");
@@ -409,7 +405,106 @@ public class ZdymakTest {
         zdymakPostPage.pageHome.click();
         zdymakPostPage.elementClickPhoto.click();
         zdymakPostPage.elementPencil.click();
-        zdymakPostPage.elementAddComment.sendKeys("grerbrbrbrbrbrbrbrbrbrbrb");
-        //zdymakPostPage.elementSave.click();
+        zdymakPostPage.elementAddComment.sendKeys(" grerbrbrbrbrbrbrbrbrbrbrb");
+        zdymakPostPage.elementSave.click();
     }
+
+    @Test
+    public void addComment() {
+        zdymakMainPage.singInButton.click();
+        zdymakSignInPage.username.sendKeys("seroiffoyija-7958@yopmail.com");
+        zdymakSignInPage.password.sendKeys("test");
+        zdymakSignInPage.button.click();
+        zdymakPostPage.elementClickPhoto.click();
+        zdymakPostPage.elementAddComment2.sendKeys("test1212");
+        zdymakPostPage.elementSend.click();
+        }
+    @Test
+    public void Like() {
+        zdymakMainPage.singInButton.click();
+        zdymakSignInPage.username.sendKeys("seroiffoyija-7958@yopmail.com");
+        zdymakSignInPage.password.sendKeys("test");
+        zdymakSignInPage.button.click();
+        zdymakPostPage.elementClickPhoto.click();
+        zdymakPostPage.like.click();
+    }
+    @Test
+    public void DisLike() {
+        zdymakMainPage.singInButton.click();
+        zdymakSignInPage.username.sendKeys("seroiffoyija-7958@yopmail.com");
+        zdymakSignInPage.password.sendKeys("test");
+        zdymakSignInPage.button.click();
+        zdymakPostPage.elementClickPhoto.click();
+        zdymakPostPage.dislike.click();
+    }
+    @Test
+    public void subscription() {
+        zdymakMainPage.singInButton.click();
+        zdymakSignInPage.username.sendKeys("seroiffoyija-7958@yopmail.com");
+        zdymakSignInPage.password.sendKeys("test");
+        zdymakSignInPage.button.click();
+        zdymakPostPage.pageHome.click();
+        zdymakPostPage.subscription.click();
+
+    }
+    @Test
+    public void subscriber() {
+        zdymakMainPage.singInButton.click();
+        zdymakSignInPage.username.sendKeys("seroiffoyija-7958@yopmail.com");
+        zdymakSignInPage.password.sendKeys("test");
+        zdymakSignInPage.button.click();
+        zdymakPostPage.pageHome.click();
+        zdymakPostPage.subscriber.click();
+
+    }
+    @Test
+    public void setting() {
+        zdymakMainPage.singInButton.click();
+        zdymakSignInPage.username.sendKeys("seroiffoyija-7958@yopmail.com");
+        zdymakSignInPage.password.sendKeys("test");
+        zdymakSignInPage.button.click();
+        zdymakPostPage.pageHome.click();
+        zdymakPostPage.setting.click();
+        String name = UUID.randomUUID().toString().substring(0, 10);
+        zdymakPostPage.name.clear();
+        zdymakPostPage.name.sendKeys(name);
+        String surname = UUID.randomUUID().toString().substring(0, 10);
+        zdymakPostPage.surname.clear();
+        zdymakPostPage.surname.sendKeys(surname);
+        zdymakPostPage.birthday.clear();
+        zdymakPostPage.birthday.sendKeys("10-12-1981");
+        zdymakPostPage.phone.clear();
+        zdymakPostPage.phone.sendKeys("+375296666612");
+        //String description = UUID.randomUUID().toString().substring(0, 100);
+        zdymakPostPage.description.clear();
+        zdymakPostPage.description.sendKeys("test");
+        zdymakPostPage.elementSave.click();
+}
+    @Test
+    public void lenta() {
+        zdymakMainPage.singInButton.click();
+        zdymakSignInPage.username.sendKeys("seroiffoyija-7958@yopmail.com");
+        zdymakSignInPage.password.sendKeys("test");
+        zdymakSignInPage.button.click();
+        zdymakPostPage.lenta.click();
+    }
+    @Test
+    public void passwSetting() {
+        zdymakMainPage.singInButton.click();
+        zdymakSignInPage.username.sendKeys("seroiffoyija-7958@yopmail.com");
+        zdymakSignInPage.password.sendKeys("test");
+        zdymakSignInPage.button.click();
+        zdymakPostPage.pageHome.click();
+        zdymakPostPage.setting.click();
+        zdymakPostPage.passwSetting.click();
+        zdymakPostPage.oldPassword.sendKeys("test");
+        zdymakPostPage.newPassword.sendKeys("test1");
+        zdymakPostPage.newPasswordAgain.sendKeys("test1");
+        zdymakPostPage.elementSave.click();
+        open("http://zdymak.live/logout");
+        zdymakMainPage.singInButton.click();
+        zdymakSignInPage.username.sendKeys("seroiffoyija-7958@yopmail.com");
+        zdymakSignInPage.password.sendKeys("test1");
+}
+
 }
