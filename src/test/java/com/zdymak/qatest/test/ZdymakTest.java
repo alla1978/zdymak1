@@ -475,9 +475,9 @@ public class ZdymakTest {
         zdymakPostPage.birthday.sendKeys("10-12-1981");
         zdymakPostPage.phone.clear();
         zdymakPostPage.phone.sendKeys("+375296666612");
-        //String description = UUID.randomUUID().toString().substring(0, 100);
+        String description = UUID.randomUUID().toString().substring(0, 35);
         zdymakPostPage.description.clear();
-        zdymakPostPage.description.sendKeys("test");
+        zdymakPostPage.description.sendKeys(description);
         zdymakPostPage.elementSave.click();
 }
     @Test
