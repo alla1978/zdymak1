@@ -4,7 +4,7 @@ import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selenide.*;
 
-// page_url = http://zdymak.live/
+// page_url = https://qa.zdymak.live/
 public class ZdymakMainPage {
     public SelenideElement singUpButton = $("button[class*=\"blue\"]");
 
